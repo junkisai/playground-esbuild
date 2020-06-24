@@ -1,0 +1,23 @@
+{
+  "name": "esbuild-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build && http-server -o",
+    "build": "esbuild src/index.tsx --bundle '--define:process.env.NODE_ENV=\"development\"' --outfile=public/out.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.39",
+    "@types/react-dom": "^16.9.8",
+    "esbuild": "^0.5.12",
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
